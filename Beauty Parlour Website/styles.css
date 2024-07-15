@@ -1,0 +1,231 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background: #f8f8f8;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background: #508D4E;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #010100;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+}
+
+/* Customized Background Image for Home Section */
+section#home {
+    background-color:#73e675; 
+    text-align: center;
+    padding-top: 100px;
+    color: #fff;
+    position: relative;
+}
+
+section#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text visibility */
+    z-index: 0;
+}
+
+section#home .container {
+    position: relative;
+    z-index: 1;
+}
+
+section#home h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+section#home p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Responsive Image Class */
+.responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Services Section */
+section#services {
+    background: #7ddc7ab0;
+    text-align: center;
+}
+
+section#services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section#services .service {
+    background: #ffffff77;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Left-align text for better readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#services .service h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section#services .service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Service Image Box */
+.service-image-box {
+    width: 100%;
+    height: 250px; /* Fixed height for service images */
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.service-image-box:hover .service-image {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* About Section */
+section#about {
+    background: #67f8626d;
+    text-align: center;
+}
+
+section#about p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Contact Styles */
+section#contact {
+    background: #77d274;
+}
+
+section#contact form {
+    max-width: 700px;
+    margin: auto;
+    background: #b5e0b476;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section#contact form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+section#contact form input,
+section#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+section#contact form button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+}
+
+section#contact form button:hover {
+    background: #f9a825;
+}
+
+/* Footer Styles */
+footer {
+    background: #1A5319;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
